@@ -1,0 +1,3 @@
+# Events
+
+In this chapter you will get a chance to take what you have learned about events and put them to use alongside all the other knowledge you have gained by creating two new web sites on Git Hub pages. The capstone approaches! And so, the guides and prompts given to you are becoming less and less. You have everything you need to complete these projects, though maybe you don't have the confidence in yourself that you are able to make these, thats what these projects are here for. You are purposefully given minimal information to show you that the knowledge and skills you need are within you!
