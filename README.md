@@ -1,2 +1,0 @@
-# js-coding-nomads-course
- 
