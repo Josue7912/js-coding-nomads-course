@@ -47,5 +47,5 @@ console.log("B Modulo LuckyNumber is", modulb)
 let modulc = c % luckyNumber
 console.log("C Modulo LuckyNumber is", modulc)
 
-let result = 0
-console.log("Label", result)
+//let result = 0
+//console.log("Label", result)
