@@ -25,3 +25,19 @@
  * support for it is not everywhere.
  */
 
+let name = "Josue"
+let greeting = "Good day to you "
+let friendName = "Vero"
+let familyName = "Montse"
+let todayDate = "02"
+let todayMonth = "12"
+let todayYear = "2021"
+let age = 31
+
+console.log(greeting + friendName)
+console.log(greeting + familyName)
+let message = `Today is ${todayDate}/${todayMonth}/${todayYear}, ${greeting}${friendName}`;
+console.log(message)
+let yearFuture = age + 20
+let msg = `In 20 years I will be ${yearFuture} years old.`
+console.log(msg)

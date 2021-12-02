@@ -3,7 +3,8 @@
 // the code so that the console does not display any errors.
 
 
-let result;
+//this line is unnecesary as it defines first what is 'result' and blocks the following assignment and calculation
+//let result;
 let result          =       78347823   *
     843972    ;
 

@@ -21,5 +21,31 @@
  * with clear and descriptive names.
  */
 
+let a = 3874;
+let b = 2398;
+let c = 54286;
+let luckyNumber = 7
+
+let sum = a + b + c
+console.log("Sum of A+B+C is", sum)
+
+let dif = c - a - b
+console.log("Difference of C-A-B", dif)
+
+let multip = a * b * c
+console.log("Multiplicate A*B*C is", multip)
+
+let largdiv = c / (a - b)
+console.log("Largest number division of C /(A-B)", largdiv)
+
+let modula = a % luckyNumber
+console.log("A Modulo LuckyNumber is", modula)
+
+let modulb = b % luckyNumber
+console.log("B Modulo LuckyNumber is", modulb)
+
+let modulc = c % luckyNumber
+console.log("C Modulo LuckyNumber is", modulc)
+
 let result = 0
 console.log("Label", result)

@@ -4,7 +4,8 @@
 const tao = "unchanging"
 let tao = "i've changed"
 
-let apples = 5
-let oranges = 12
+let apples = 5;
+let oranges = 12;
+let lemons = oranges
 
 let fruit = apples + lemons
