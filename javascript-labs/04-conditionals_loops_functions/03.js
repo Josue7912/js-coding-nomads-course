@@ -9,3 +9,24 @@ function getRandomNumber(){
  *    random numbers until it has generated one that is divisible by 11. Do you
  *    remember what operator to use?
  */
+
+j = 0;
+while (j < 1000){
+    j = j + 5;
+    console.log(j);
+}
+
+
+k = -101;
+while (k < 100 && k > -102){
+    k++;
+    console.log(k);
+}
+
+
+
+i = getRandomNumber()
+
+//while ((i % 11) !== 0){
+//   console.log(i)
+//   }

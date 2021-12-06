@@ -22,13 +22,50 @@
 
 // Write your code here:
 
+function KtoC(tempInK){
+    let tempInC = (tempInK) - 273.15;
+    return tempInC;
+}
 
+function CtoK(tempInC){
+    let tempInK = (tempInC) + 273.15;
+    return tempInK;
+}
 
+function FtoK(tempInF){
+    let tempInK = (tempInF - 32)* 5/9 + 273.15;
+    return tempInK;
+}
 
+function KtoF(tempInK){
+    let tempInF = (tempInK - 273.15) * 9/5 + 32;
+    return tempInF;
+}
 
+function pythagoras(b, c){
+    let hypotenuse = b ** 2 + c ** 2;
+    return hypotenuse;
+}
 
+function inchToCm(inches){
+    let cm = inches / 0.39370;
+    return cm;
+}
 
+function CmToInch(cm){
+    let inch = centimeters * 0.39370;
+    return inch;
+}
 
+function MtoKm(miles){
+    let kilometers = miles / 0.62137;
+    return kilometers;
+}
+
+function KmtoM(kilometers){
+    let miles = kilometers * 0.62137;
+    return miles;
+}
 
 // Do not modify anything below this line
 

@@ -40,7 +40,37 @@ function getRandomNumber(){
  *
  */
 
-let randomNumber = getRandomNumber() + getRandomNumber()
+let randomNumber = getRandomNumber()
 
 console.log(randomNumber)
+
+function getRandomAge(){
+    return Math.floor((Math.random() * 100) +1);}
+let age = getRandomAge()
+let price = 0
+let fare = ""
+
+console.log(age)
+
+if (age < 5){
+    console.log("You are under 5, you don't need to pay!");}
+    if (randomNumber == 5){
+        console.log("Lucky you! Today you get to ride free of charge.")}
+    else {
+        if (age >= 5 && age < 13){
+            console.log("You pay the child person fare, that will be $3, please!");}
+        else if (age >= 13 && age < 21){
+            console.log("You pay the teenager person fare, that will be $5, please!");}
+        else if (age >=21 && age < 30){
+            console.log("You pay the young person fare, that will be $10, please!");}
+        else if (age >= 30 && age < 65){
+            console.log("You pay the adult person fare, that will be $20, please!");}
+        else if (age >= 65){
+            console.log("You pay the pensioner person fare, that will be $12, please!");}
+        }
+
+
+
+
+
 

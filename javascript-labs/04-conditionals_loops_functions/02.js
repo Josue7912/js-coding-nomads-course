@@ -14,3 +14,26 @@
  * find both ways!
  *
  */
+
+<!-- For loop of numbers between 5 and 1000 incrementing in 5 -->
+
+for( let i = 5;
+    i < 1001;
+    i = i += 5){
+    console.log(i);
+    }
+
+<!-- For loop of every number between 100 and -100 (included) -->
+
+for( let j = -100;
+    j <= 100 && j>= -100;
+    j++){
+    console.log(j)
+    }
+
+//for( let k = 3;
+//    k < 1001;
+//    k = k--3
+//    ){
+//    console.log(k)
+//    }
