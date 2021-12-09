@@ -17,3 +17,19 @@
  *    function that takes an array as an argument and returns the sum. Use this
  *    function to log the sum of the two arrays of odd and even numbers.
  */
+
+let listOfItems =["chair", "screen", "mouse", "printer", "keyboard"]
+
+let listOfDrawers = [ ["pen" , "folder", "pencil", "rubber", "post-it"], ["battery", "headset", "charger", "usb drive", "cable"], ["book", "cd", "dvd", "figure", "camera"]]
+
+let pen = listOfDrawers[0][0]
+let rubber = listOfDrawers[0][3]
+let headset = listOfDrawers[1][1]
+let charger = listOfDrawers[1][2]
+let dvd = listOfDrawers[2][2]
+
+console.log(pen)
+console.log(rubber)
+console.log(headset)
+console.log(charger)
+console.log(dvd)

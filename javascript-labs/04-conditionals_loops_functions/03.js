@@ -9,6 +9,7 @@ function getRandomNumber(){
  *    random numbers until it has generated one that is divisible by 11. Do you
  *    remember what operator to use?
  */
+ console.log("======While loop of numbers between 5 and 1000 incrementing in 5======")
 
 j = 0;
 while (j < 1000){
@@ -16,6 +17,7 @@ while (j < 1000){
     console.log(j);
 }
 
+console.log("=====While loop of every number between 100 and -100 (included)======")
 
 k = -101;
 while (k < 100 && k > -102){
@@ -23,10 +25,25 @@ while (k < 100 && k > -102){
     console.log(k);
 }
 
+console.log("=====While loop that outputs this sequence of numbers: 3, 2, 5, 4, 7, 6, 9, 8 ...======")
 
+sequenceNumber = 0
+k = 0
+while (k < 5000){
+    k++;
+    sequenceNumber += 3
+    console.log(sequenceNumber)
+    sequenceNumber -=1
+    console.log(sequenceNumber)
+}
+
+
+console.log("=====Get random number divisible by 11======")
 
 i = getRandomNumber()
-
-//while ((i % 11) !== 0){
-//   console.log(i)
-//   }
+while ((i % 11) !== 0){
+   i = getRandomNumber()
+   if ((i % 11 === 0)){
+       console.log(i)
+   }
+}

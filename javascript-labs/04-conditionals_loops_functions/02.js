@@ -14,8 +14,7 @@
  * find both ways!
  *
  */
-
-<!-- For loop of numbers between 5 and 1000 incrementing in 5 -->
+console.log("======For loop of numbers between 5 and 1000 incrementing in 5======")
 
 for( let i = 5;
     i < 1001;
@@ -23,7 +22,7 @@ for( let i = 5;
     console.log(i);
     }
 
-<!-- For loop of every number between 100 and -100 (included) -->
+console.log("=====For loop of every number between 100 and -100 (included)======")
 
 for( let j = -100;
     j <= 100 && j>= -100;
@@ -31,9 +30,17 @@ for( let j = -100;
     console.log(j)
     }
 
-//for( let k = 3;
-//    k < 1001;
-//    k = k--3
-//    ){
-//    console.log(k)
-//    }
+
+console.log("=====For loop that outputs this sequence of numbers: 3, 2, 5, 4, 7, 6, 9, 8 ...======")
+
+sequenceNumber = 0
+
+for( let k = 0;
+    k < 5000;
+    k++
+    ){
+      sequenceNumber += 3
+      console.log(sequenceNumber)
+      sequenceNumber -=1
+      console.log(sequenceNumber)
+    }

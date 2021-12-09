@@ -16,5 +16,17 @@ lengths = [
  * paste the code you wrote previously into this file.
  */
 
+ function CmToInch(cm){
+    let inch = cm * 0.39370;
+    return inch;
+}
 
+for (let i = 0; i < lengths.length; i++){
+    console.log(CmToInch(i));
+}
 
+for (let i = 0; i < lengths.length; i++){
+    let avcm = (eval(lengths.join('+'))/lengths.length);
+    var avin = CmToInch(avcm);
+    console.log("The average length in cm is " + avcm + ", which is " + avin + " in inches");
+}

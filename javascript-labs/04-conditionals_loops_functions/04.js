@@ -48,21 +48,21 @@ function pythagoras(b, c){
 }
 
 function inchToCm(inches){
-    let cm = inches / 0.39370;
+    let cm = inches * 0.39370;
     return cm;
 }
 
 function CmToInch(cm){
-    let inch = centimeters * 0.39370;
+    let inch = cm / 0.39370;
     return inch;
 }
 
-function MtoKm(miles){
+function MToKm(miles){
     let kilometers = miles / 0.62137;
     return kilometers;
 }
 
-function KmtoM(kilometers){
+function KmToM(kilometers){
     let miles = kilometers * 0.62137;
     return miles;
 }

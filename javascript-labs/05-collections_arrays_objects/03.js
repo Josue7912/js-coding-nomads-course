@@ -70,3 +70,28 @@ stores =  [
     [ '4003IN', 'Target', 'IN', 'North', 'Attica' ],
     [ '4003KY', 'Target', 'KY', 'North', 'Ashland' ]
 ]
+
+stores.forEach (element => console.log(element[4]))
+
+
+stores.forEach (store => {if (store[2] == 'CA') {console.log(store[1])}})
+
+for ( store[2] == 'CA'; store){
+    console.log(store[1])
+}
+
+filterTargeted = stores.filter(store => (store[1] == 'Target'))
+console.log(filterTargeted.length)
+
+filterApplianceDirect = stores.filter(store => (store[1] == 'Appliance Direct'))
+filterKMart = stores.filter(store => (store[1] == 'K-Mart'))
+filterCircuit = stores.filter(store => (store[1] == 'Circuit City'))
+filterBestBuy = stores.filter(store => (store[1] == 'Best Buy'))
+
+console.log("There are "+ filterKMart.length + " K-Marts in total.");
+console.log("There are "+ filterTargeted.length + " Target in total.");
+console.log("There are "+ filterApplianceDirect.length + " Appliance Direct in total.");
+console.log("There are "+ filterBestBuy.length + " Best Buy in total.");
+console.log("There are "+ filterCircuit.length + " Circuit City in total.");
+
+
