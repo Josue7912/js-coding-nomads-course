@@ -71,15 +71,20 @@ stores =  [
     [ '4003KY', 'Target', 'KY', 'North', 'Ashland' ]
 ]
 
+console.log("1. Log only the city of each store.")
 stores.forEach (element => console.log(element[4]))
 
 
+console.log("\n2. Log only the names of stores in state 'CA'.")
 stores.forEach (store => {if (store[2] == 'CA') {console.log(store[1])}})
 
-for ( store[2] == 'CA'; store){
-    console.log(store[1])
-}
 
+//for ( store[2] == 'CA'; store){
+//    console.log(store[1])
+//}
+
+
+console.log("\n3. Log the number of Target stores in total.")
 filterTargeted = stores.filter(store => (store[1] == 'Target'))
 console.log(filterTargeted.length)
 
@@ -88,6 +93,7 @@ filterKMart = stores.filter(store => (store[1] == 'K-Mart'))
 filterCircuit = stores.filter(store => (store[1] == 'Circuit City'))
 filterBestBuy = stores.filter(store => (store[1] == 'Best Buy'))
 
+console.log("\n4. Log the number of each type of store.\n")
 console.log("There are "+ filterKMart.length + " K-Marts in total.");
 console.log("There are "+ filterTargeted.length + " Target in total.");
 console.log("There are "+ filterApplianceDirect.length + " Appliance Direct in total.");
