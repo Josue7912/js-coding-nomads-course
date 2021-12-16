@@ -13,7 +13,7 @@
  *
  * Remove the first sub array containing headers without manually deleting it.
  * Do you remember the method to remove the first element of an array?
- * 
+ *
  * Then, using forEach and arrow functions:
  *
  * 1. Output the total amount of expenses for 2017 and 2018.
@@ -938,3 +938,74 @@ let expenses = [
     "Bank of America - Credit Card",
   ],
 ];
+
+let firstElement = expenses.shift();
+
+console.log("\n1. Output the total amount of expenses for 2017 and 2018.\n");
+
+let yearExpenses = 0
+expenses.forEach(year => {
+  let dateYear = year[0]
+  let date = new Date(dateYear)
+  if (date.getUTCFullYear() < 2019){
+    yearExpenses += Math.round(year[3])
+  }
+})
+console.log(yearExpenses)
+
+
+console.log("\n2. Output the total amount paid for Groceries.\n");
+
+let groceries = 0
+expenses.forEach(expenses => {if (expenses[2] == 'Groceries') {
+  groceries += Math.round((expenses[3]))
+}})
+console.log(groceries)
+
+
+console.log("\n3. Output the total difference in each account after all transactions. So if \
+$100 was deposited into the account and $50 spent, then the total change would be $50.\n");
+
+let familyChecking = 0
+expenses.forEach(expenses => {if (expenses[4] == 'Family Checking') {
+  familyChecking += Math.round((expenses[3]))
+}})
+console.log("Family Checking - Total amount is "+ familyChecking)
+
+let alaska = 0
+expenses.forEach(expenses => {if (expenses[4] == 'Alaska Airlines Visa') {
+  alaska += Math.round((expenses[3]))
+}})
+console.log("Alaska Airlines Visa - Total amount is "+ alaska)
+
+let americanExpress = 0
+expenses.forEach(expenses => {if (expenses[4] == 'American Express') {
+  americanExpress += Math.round((expenses[3]))
+}})
+console.log("American Express - Total amount is "+ americanExpress)
+
+let visaRewards = 0
+expenses.forEach(expenses => {if (expenses[4] == 'Visa Rewards') {
+  visaRewards += Math.round((expenses[3]))
+}})
+console.log("Visa Rewards - Total amount is "+ visaRewards)
+
+
+console.log("\n4. Create a new array that only has the date, description, and amount of rows \
+that have the category 'Eating Out'.\n");
+
+let newArray = []
+expenses.forEach(expenses => {if (expenses[2] == 'Eating Out'){
+  newArray.push(expenses[0],expenses[1],expenses[3])
+}})
+console.log(newArray)
+
+
+console.log("\n5. Create another array with only the date, description and amount of rows\
+that have the category 'Gear and Clothing'.\n");
+
+let gearArray = []
+expenses.forEach(expenses => {if (expenses[2] == 'Gear and Clothing'){
+  gearArray.push(expenses[0],expenses[1],expenses[3])
+}})
+console.log(gearArray)
