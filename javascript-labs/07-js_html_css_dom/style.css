@@ -1,0 +1,30 @@
+html {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    max-width: 900px;
+    background-color: rgb(12, 0, 67);
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    }
+
+    h1 {
+    font-size: 4rem;
+    }
+
+    h2 {
+    font-size: 2rem;
+    }
+
+    p {
+    font-size: 1.5rem;
+    }
+
+    footer {
+    font-size: 1rem;
+    }
+
+    h3 {
+    font-size: 1rem;
+    }

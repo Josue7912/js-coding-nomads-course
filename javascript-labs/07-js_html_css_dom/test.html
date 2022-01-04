@@ -1,0 +1,23 @@
+<body>
+    <script>
+      // 1
+      let mainDiv = document.createElement("div");
+      mainDiv.setAttribute("id", "mainDiv");
+
+      // 2
+      let btn = document.createElement("button");
+      btn.textContent = "Click Me!";
+
+      // 3
+      mainDiv.append(btn);
+      document.body.append(mainDiv);
+
+      // 4
+      let mainDivOnPage = document.getElementById("mainDiv");
+
+      // 5
+      let btn2 = document.createElement("button");
+      btn2.textContent = "Don't Click Me!";
+      mainDivOnPage.append(btn2);
+    </script>
+  </body>

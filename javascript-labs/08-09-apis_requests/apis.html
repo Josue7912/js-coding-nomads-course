@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>COVID-19 Country Latest Statistics</title>
+
+    </head>
+    <body id="body">
+        <br>
+        <br>
+        <h1>COVID-19 Country Statistics</h1>
+        <br>
+        <img src="image1170x530cropped.jpg" height="320" width="750">
+        <br>
+        <h2>Please provide the country name to get latest updated info about COVID-19 situation:</h2>
+        <br>
+        <div>
+            <p>
+                <input id="input-text" type="text" placeholder="Search...">
+            </p>
+        </div>
+
+        <p id=country>Country</p>
+        <p><label>Name: <label id="country-name"></label></label></p>
+        <p><label>Region: <label id="region-name"></label></label></p>
+        <p><label>Subregion: <label id="subregion-name"></label></label></p>
+        <p><label>Population: <label id="population"></label></label></p>
+        <p><label>Flags: <a href="url" id="flag"></a></label></p>
+        <p><label>Maps: <a href="url" id="maps"></a></label></p>
+        <br>
+        <br>
+        <table>
+            <tr>
+                <th>Confirmed</th>
+                <th>Recovered</th>
+                <th>Critical</th>
+                <th>Deaths</th>
+            </tr>
+            <tr>
+                <td id="confirmed"></td>
+                <td id="recovered"></td>
+                <td id="critical"></td>
+                <td id="deaths"></td>
+            </tr>
+        </table>
+    </body>
+
+    <script src="apis.js"></script>
+</html>
+
+
